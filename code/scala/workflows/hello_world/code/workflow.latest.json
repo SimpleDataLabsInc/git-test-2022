@@ -33,6 +33,12 @@
     "sourcePort" : "54392",
     "target" : "Reformat_61950",
     "targetPort" : "37387"
+  }, {
+    "id" : "214",
+    "source" : "Source_77727",
+    "sourcePort" : "54392",
+    "target" : "Reformat_78960",
+    "targetPort" : "22073"
   } ],
   "processes" : {
     "Reformat_61950" : {
@@ -41,8 +47,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : 761,
-        "y" : 235,
+        "x" : 805,
+        "y" : 276,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -106,14 +112,57 @@
         } ]
       }
     },
+    "Reformat_78960" : {
+      "id" : "Reformat_78960",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "slug" : "Reformat_2",
+        "x" : 867.5,
+        "y" : 51,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "22073",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "20862",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "22073##customer_id", "22073##order_status" ],
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "order_status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "order_status"
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "Source_77727" : {
       "id" : "Source_77727",
       "component" : "Source",
       "metadata" : {
         "label" : "Source_0",
         "slug" : "Source_0",
-        "x" : 595,
-        "y" : 234,
+        "x" : 527,
+        "y" : 136,
         "language" : "scala",
         "phase" : 0,
         "cache" : true,
@@ -128,7 +177,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "datasetId" : "11/datasets/orders"
+        "datasetId" : "12/datasets/orders"
       }
     }
   },
