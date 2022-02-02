@@ -41,8 +41,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : 964,
-        "y" : 121,
+        "x" : 965,
+        "y" : -10,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -60,7 +60,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "37387##order_id", "37387##customer_id", "37387##order_status", "37387##order_category", "37387##order_date", "37387##amount" ],
         "expressions" : [ {
           "target" : "order_id",
           "expression" : {
@@ -112,8 +112,8 @@
       "metadata" : {
         "label" : "Source_0",
         "slug" : "Source_0",
-        "x" : 505,
-        "y" : 374,
+        "x" : 479,
+        "y" : 305,
         "language" : "scala",
         "phase" : 0,
         "cache" : true,
